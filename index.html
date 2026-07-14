@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KING MOD ANDROID</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    font-family:Arial, sans-serif;
+    overflow:hidden;
+    color:white;
+}
+
+/* CHỮ CHẠY */
+
+.top-marquee{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:40px;
+
+    background:black;
+
+    overflow:hidden;
+
+    z-index:99999;
+
+    display:none;
+
+    border-bottom:2px solid red;
+
+    box-shadow:0 0 20px red;
+}
+
+.marquee-text{
+
+    position:absolute;
+
+    top:0;
+
+    left:100%;
+
+    white-space:nowrap;
+
+    color:red;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    line-height:40px;
+
+    text-shadow:0 0 10px red;
+}
+
+/* MÀN HÌNH CHẠM */
+
+#startScreen{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    background:black;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:9999;
+
+    flex-direction:column;
+}
+
+/* NÚT */
+
+#startBtn{
+    padding:22px 55px;
+
+    border:none;
+
+    border-radius:20px;
+
+    background:red;
+
+    color:white;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    box-shadow:
+    0 0 20px red,
+    0 0 40px red,
+    0 0 80px red;
+
+    animation:glow 1s infinite alternate;
+}
+
+@keyframes glow{
+
+    from{
+        box-shadow:
+        0 0 10px red,
+        0 0 30px red,
+        0 0 50px red;
+    }
+
+    to{
+        box-shadow:
+        0 0 30px red,
+        0 0 60px red,
+        0 0 120px red;
+    }
+
+}
+
+/* WEB */
+
+#mainWeb{
+    display:none;
+
+    width:100%;
+    height:100vh;
+
+    overflow-y:auto;
+
+    padding:60px 15px 20px 15px;
+}
+
+/* NỀN NEON ĐỎ */
+
+.red-neon{
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:
+    radial-gradient(circle at center,
+    rgba(255,0,0,0.20),
+    rgba(0,0,0,1) 70%);
+
+    z-index:-2;
+}
+
+/* LỚP ĐEN */
+
+.overlay{
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.45);
+
+    z-index:-1;
+}
+
+/* KHUNG */
+
+.box{
+    max-width:900px;
+
+    margin:auto;
+
+    background:rgba(0,0,0,0.70);
+
+    border:2px solid red;
+
+    border-radius:30px;
+
+    padding:25px;
+
+    box-shadow:
+    0 0 20px red,
+    0 0 50px red,
+    0 0 100px rgba(255,0,0,0.7);
+}
+
+/* CHỮ */
+
+h1{
+    text-align:center;
+
+    color:red;
+
+    margin-bottom:20px;
+
+    font-size:32px;
+
+    text-shadow:0 0 15px red;
+}
+
+h2{
+    color:#ff4444;
+
+    margin-top:25px;
+    margin-bottom:10px;
+
+    text-shadow:0 0 10px red;
+}
+
+p{
+    margin-bottom:10px;
+
+    line-height:1.8;
+
+    font-size:17px;
+}
+
+.line{
+    border-top:1px solid rgba(255,255,255,0.2);
+
+    margin:20px 0;
+}
+
+a{
+    color:#00ffff;
+
+    text-decoration:none;
+}
+
+a:hover{
+    color:white;
+}
+
+.center{
+    text-align:center;
+}
+
+.warning{
+    color:#ff5555;
+
+    font-weight:bold;
+
+    text-shadow:0 0 10px red;
+}
+
+</style>
+</head>
+<body>
+
+<!-- NHẠC -->
+<audio id="music" loop>
+    <source src="https://files.catbox.moe/pkaiwe.mp3" type="audio/mp3">
+</audio>
+
+<!-- CHỮ CHẠY -->
+<div class="top-marquee" id="topMarquee">
+
+    <div class="marquee-text" id="marqueeText">
+        ADMIN CHÍNH CHỦ PHẠM ĐỨC TIẾN — YTB: TKING MOD — MUA FILE IB
+    </div>
+
+</div>
+
+<!-- MÀN HÌNH CHẠM -->
+
+<div id="startScreen">
+
+    <button id="startBtn">
+        CHẠM 1 LẦN ĐỂ VÀO WEB
+    </button>
+
+</div>
+
+<!-- WEB -->
+
+<div id="mainWeb">
+
+    <!-- NỀN NEON -->
+    <div class="red-neon"></div>
+
+    <!-- LỚP ĐEN -->
+    <div class="overlay"></div>
+
+    <!-- KHUNG -->
+    <div class="box">
+
+        <h1>👑 KING MOD ANDROID – RIN DEV 👑</h1>
+
+        <p class="center warning">
+            ⚠️ OFFICIAL SYSTEM – ANTI FAKE – ANTI LỪA ĐẢO ⚠️
+        </p>
+
+        <div class="line"></div>
+
+        <h2>🎉 NỘI QUY NHÓM</h2>
+
+        <p>👉 Không gửi nội dung 18+</p>
+        <p>👉 Không xúc phạm Admin & thành viên</p>
+        <p>👉 Không spam tin nhắn</p>
+        <p>👉 Không cà khịa, gây war</p>
+        <p>👉 Hạn chế chửi thề giới hạn là 10 lần chửi</p>
+        <p>👉 Không đăng ảnh 18+</p>
+        <p>👉 Không lôi kéo thành viên sang nhóm khác</p>
+        <p>👉 Không mạo danh Admin</p>
+
+        <div class="line"></div>
+
+        <h2>📌 HÌNH PHẠT</h2>
+
+        <p>• Nhắc 1 lần → Cảnh cáo cấm chat 20p nên sẽ bị kick</p>
+        <p>• Nhắc 2 lần → Ban 5 ngày</p>
+        <p>• Nhắc 3 lần → Ban vĩnh viễn</p>
+        <p>• Cố tình phá nhóm → Kick ngay lập tức</p>
+
+        <div class="line"></div>
+
+        <h2>📞 LIÊN HỆ CHÍNH CHỦ</h2>
+
+        <p>📱 ZALO: 0366472732</p>
+
+        <p>
+            📘 FACEBOOK:
+            <a href="https://www.facebook.com/share/1BmK2sjyf7/" target="_blank">
+                BẤM VÀO ĐÂY
+            </a>
+        </p>
+
+        <p>
+            🎵 TIKTOK:
+            <a href="https://www.tiktok.com/@king.mod.rin.dev?_r=1&_t=ZS-980GseWirjt"_blank">
+                BẤM VÀO ĐÂY
+            </a>
+        </p>
+
+        <p>
+            ▶️ YOUTUBE:
+            <a href="https://youtube.com/@rin-dev?si=-R6msfkpKsKPspoC" target="_blank">
+                BẤM VÀO ĐÂY
+            </a>
+        </p>
+
+        <div class="line"></div>
+
+        <h2>🛒 MUA FILE</h2>
+
+        <p>
+            🔰 WEB FILE:
+            <a href="https://phamductienbmg123-creator.github.io/BAN-FILE-FF-/" target="_blank">
+                BẤM VÀO ĐÂY
+            </a>
+        </p>
+
+        <div class="line"></div>
+
+        <h2 class="center">
+            STYLE TKING MOD RIN DEV
+        </h2>
+
+        <p class="center">
+            CRE: PHẠM ĐỨC TIẾN
+        </p>
+
+        <div class="line"></div>
+
+        <h2 class="center">
+            👑💣 KING MOD ANDROID – RIN DEV 💣👑
+        </h2>
+
+    </div>
+
+</div>
+
+<script>
+
+const startBtn = document.getElementById("startBtn");
+
+const startScreen = document.getElementById("startScreen");
+
+const mainWeb = document.getElementById("mainWeb");
+
+const music = document.getElementById("music");
+
+const topMarquee = document.getElementById("topMarquee");
+
+const marqueeText = document.getElementById("marqueeText");
+
+/* CHẠM 1 LẦN */
+
+startBtn.addEventListener("click", function(){
+
+    /* PHÁT NHẠC */
+    music.play();
+
+    /* ẨN MÀN HÌNH */
+    startScreen.style.display = "none";
+
+    /* HIỆN WEB */
+    mainWeb.style.display = "block";
+
+    /* HIỆN CHỮ CHẠY */
+    topMarquee.style.display = "block";
+
+    /* RESET */
+    let pos = window.innerWidth;
+
+    /* CHỮ CHẠY */
+    setInterval(function(){
+
+        pos -= 2;
+
+        marqueeText.style.left = pos + "px";
+
+        if(pos < -marqueeText.offsetWidth){
+
+            pos = window.innerWidth;
+
+        }
+
+    }, 20);
+
+});
+
+</script>
+
+</body>
+</html>
